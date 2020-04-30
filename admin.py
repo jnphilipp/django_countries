@@ -17,3 +17,16 @@
 # along with django_countries. If not, see <http://www.gnu.org/licenses/>.
 
 from django.contrib import admin
+from django.utils.translation import ugettext_lazy as _
+
+from .models import Country
+
+
+@admin.register(Country)
+class CountryAdmin(admin.ModelAdmin):
+    fieldsets = [
+        (None, {'fields': ['name', 'locale_name', 'code', 'phone_prefix']}),
+    ]
+    list_display = ('name', 'locale_name', 'code')
+    search_fields = ('name', 'locale_name', 'code')
+    ordering = ('code',)

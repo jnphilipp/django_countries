@@ -6,3 +6,6 @@ __pycache__/
 # SublimeText
 *.sublime-workspace
 *.sublime-project
+
+# Migrations
+migrations/*
