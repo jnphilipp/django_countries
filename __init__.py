@@ -17,3 +17,9 @@
 # along with django_countries. If not, see <http://www.gnu.org/licenses/>.
 
 default_app_config = 'countries.apps.CountriesConfig'
+
+__author__ = 'J. Nathanael Philipp (jnphilipp)'
+__email__ = 'nathanael@philipp.land'
+__license__ = 'GPLv3'
+__version__ = '0.1.0'
+__github__ = 'https://github.com/jnphilipp/django_countries'
